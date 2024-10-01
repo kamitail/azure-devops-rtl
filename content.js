@@ -63,4 +63,18 @@ setInterval(() => {
       }
     );
   });
+
+  [
+    ...document.getElementsByClassName(
+      "bolt-dialog-content flex-column flex-grow bolt-dialog-content-bottom-padding bolt-default-horizontal-spacing"
+    ),
+  ].forEach((block) => {
+    [
+      ...block.getElementsByClassName(
+        "bolt-textfield flex-row flex-center focus-treatment"
+      ),
+    ].forEach((title) => {
+      title.dir = "rtl";
+    });
+  });
 }, 500);
