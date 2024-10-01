@@ -1,0 +1,18 @@
+{
+  "name": "Azure Devops RTL",
+  "description": "Azure Devops in RTL",
+  "version": "1.0",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://dev.azure.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
